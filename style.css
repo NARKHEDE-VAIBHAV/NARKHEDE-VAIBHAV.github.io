@@ -1,0 +1,173 @@
+/* ====== Base Theme (Light) ====== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ====== Header & Footer ====== */
+header, footer {
+  background: #24292e;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* Center header/footer content */
+header .inner, footer .inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1, footer { margin: 0; }
+
+#search {
+  margin: 1rem auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: block; /* center */
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto; /* center main */
+}
+
+/* ====== Categories ====== */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.category {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.category:hover { transform: translateY(-5px); }
+.category a {
+  text-decoration: none;
+  color: #24292e;
+  font-weight: bold;
+}
+
+/* ====== Search Results ====== */
+.results {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.results div {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ====== Code Blocks ====== */
+pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+code {
+  font-family: "Fira Code", monospace;
+}
+code .keyword { color: #569cd6; }
+code .string  { color: #ce9178; }
+code .number  { color: #b5cea8; }
+code .comment { color: #6a9955; font-style: italic; }
+
+/* ====== Copy button ====== */
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.copy-btn:hover { opacity: 1; }
+
+/* ====== Post List Styling ====== */
+.post-list, .post-list li { list-style: none; padding: 0; margin: 0; }
+.post-list a,
+.post-list a:link,
+.post-list a:visited,
+.post-list a:active,
+.post-list a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.post-list a:hover { color: #93c5fd !important; text-decoration: underline; }
+
+/* ====== Tables ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  text-align: center;
+}
+table th {
+  background: #24292e;
+  color: #fff;
+  font-weight: bold;
+}
+table tr:nth-child(even) { background: #f5f5f5; }
+
+/* ====== Dark Mode ====== */
+@media (prefers-color-scheme: dark) {
+  body { background: #121212; color: #e0e0e0; }
+  .category, .results div { background: #1e1e1e; color: #ddd; }
+  header, footer { background: #000; }
+  .category a { color: #58a6ff; }
+  table { background: #1e1e1e; color: #e0e0e0; }
+  table th { background: #000; color: #93c5fd; }
+  table tr:nth-child(even) { background: #222; }
+}
+
+
+/* Make links inside posts white by default */
+.results p a,
+.post-list a {
+    color: #ffffff !important;
+}
+
+/* Optional: hover effect */
+.results p a:hover {
+    color: #93c5fd !important; /* light blue on hover */
+}

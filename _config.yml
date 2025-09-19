@@ -1,0 +1,7 @@
+title: "notes"
+baseurl: ""                   # empty for user site
+url: "https://NARKHEDE-VAIBHAV.github.io"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed

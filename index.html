@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>notes</h1>
+    <input type="text" id="search" placeholder="🔍 Search posts...">
+  </header>
+
+  <main>
+    <h2>Categories</h2>
+    <div class="categories" id="categories"></div>
+
+    <h2>Results</h2>
+    <div id="results" class="results"></div>
+  </main>
+
+  <footer>
+    <p></p>
+  </footer>
+
+  <script>
+    // Categories (auto expandable)
+    const categories = [
+      { name: "Bug Hunt", path: "bughunt/" },
+      { name: "OSINT", path: "OSINT/" }
+      { name: "Python", path: "python/" },
+      { name: "CCNA", path: "ccna/" },
+      { name: "Linux", path: "linux/" }
+      
+    ];
+
+    const container = document.getElementById("categories");
+    categories.forEach(cat => {
+      let div = document.createElement("div");
+      div.className = "category";
+      div.innerHTML = `<a href="${cat.path}">${cat.name}</a>`;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>

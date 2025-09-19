@@ -1,0 +1,33 @@
+# 🎥 Video Analysis
+
+**Intro:**  
+Videos are a rich source of OSINT, providing visual context, geolocation clues, and metadata that can verify events or track incidents. Video analysis tools help investigators, journalists, and researchers extract, verify, and analyze video content efficiently.
+
+---
+
+## 🔗 Resources & Quick Guide
+
+- 📺 **[YouTube Data Viewer](https://citizenevidence.amnestyusa.org/)**  
+  *What:* Extract metadata from YouTube videos.  
+  *Why use it:* Get upload date, thumbnails, and video IDs for investigation.  
+  *Quick tip:* Useful for cross-referencing content across platforms.
+
+- 🔍 **[InVID & WeVerify Video Verification Tool](https://www.invid-project.eu/tools-and-services/invid-verification-plugin/)**  
+  *What:* Browser extension for verifying videos.  
+  *Why use it:* Detect manipulation, verify origin, and extract key frames.  
+  *Quick tip:* Combine with reverse image search for frame-level verification.
+
+- 🖼️ **[Frame-by-Frame Video Player](https://sourceforge.net/projects/framebyframevideo/)**  
+  *What:* Play videos frame by frame.  
+  *Why use it:* Examine fine details, timestamps, and subtle visual clues.  
+  *Quick tip:* Ideal for analyzing security footage or subtle edits.
+
+- 🌍 **[YouTube Geo Tag](https://mattw.io/youtube-geofind/location)**  
+  *What:* Finds the geolocation of a video via tags and clues.  
+  *Why use it:* Helps determine the origin or filming location of videos.  
+  *Quick tip:* Cross-check with maps, landmarks, and other OSINT sources.
+
+- 📱 **Snap Map (public stories)**  
+  *What:* Snap Map shows public Snap stories by location.  
+  *Why use it:* Provides area/event context for videos shared publicly.  
+  *Quick tip:* Can be used to corroborate timelines or events geographically.
